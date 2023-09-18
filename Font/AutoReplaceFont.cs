@@ -274,7 +274,7 @@ public class AutoReplaceFontTool : EditorWindow
             switch (_fontType)
             {
                 case FontType.Text:
-                    Text[] texts = go.GetComponentsInChildren<Text>();
+                    Text[] texts = go.GetComponentsInChildren<Text>(true);
                     
                     foreach (var text in texts)
                     {
